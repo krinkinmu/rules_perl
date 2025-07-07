@@ -21,6 +21,9 @@ MAIN="$(rlocation "{main}")"
 
 runfiles_export_envvars
 
+env
+echo exec "${INTERPRETER}" "${ENTRYPOINT}" "${CONFIG}" "${MAIN}" -- "$@"
+
 exec \
     "${INTERPRETER}" \
     "${ENTRYPOINT}" \
