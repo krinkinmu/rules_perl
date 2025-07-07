@@ -22,6 +22,7 @@ MAIN="$(rlocation "{main}")"
 runfiles_export_envvars
 
 env
+echo Current working dir is $PWD
 echo exec "${INTERPRETER}" "${ENTRYPOINT}" "${CONFIG}" "${MAIN}" -- "$@"
 
 exec \
